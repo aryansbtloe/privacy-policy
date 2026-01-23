@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://privacy.aryansbtloe.com/sitemap.xml
+Sitemap: https://aryansbtloe.github.io/privacy-policy/sitemap.xml

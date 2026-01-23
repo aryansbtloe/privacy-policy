@@ -3,24 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - <span id="app-name">Virtual Mic</span></title>
+    <title>Privacy Policy - Virtual Mic</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Privacy Policy and Terms of Service for Virtual Mic. Clear explanation of how we collect, use, and protect your information.">
+    <meta name="keywords" content="privacy policy, terms of service, data protection, user privacy, Virtual Mic">
+    <meta name="author" content="Aryansbtloe">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://aryansbtloe.github.io/privacy-policy/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aryansbtloe.github.io/privacy-policy/">
+    <meta property="og:title" content="Privacy Policy - Virtual Mic">
+    <meta property="og:description" content="Privacy Policy and Terms of Service for Virtual Mic. Learn how we protect your privacy and handle your data.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://aryansbtloe.github.io/privacy-policy/">
+    <meta property="twitter:title" content="Privacy Policy - Virtual Mic">
+    <meta property="twitter:description" content="Privacy Policy and Terms of Service for Virtual Mic. Learn how we protect your privacy and handle your data.">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#007AFF">
+    <meta name="msapplication-TileColor" content="#007AFF">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #3498db;
-            --secondary-color: #2c3e50;
-            --accent-color: #e74c3c;
-            --success-color: #27ae60;
-            --warning-color: #f39c12;
-            --light-bg: #f8f9fa;
-            --dark-bg: #2c3e50;
-            --text-color: #333;
-            --text-light: #666;
-            --border-color: #e1e8ed;
-            --shadow: 0 4px 20px rgba(0,0,0,0.1);
-            --shadow-hover: 0 8px 30px rgba(0,0,0,0.15);
-            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            /* Apple-inspired color palette */
+            --primary-color: #007AFF;
+            --primary-hover: #0051D5;
+            --secondary-color: #1D1D1F;
+            --accent-color: #FF3B30;
+            --success-color: #34C759;
+            --warning-color: #FF9500;
+            --light-bg: #F5F5F7;
+            --dark-bg: #000000;
+            --text-color: #1D1D1F;
+            --text-secondary: #86868B;
+            --text-tertiary: #6E6E73;
+            --border-color: #D2D2D7;
+            --card-bg: #FFFFFF;
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
+            --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+            --shadow-lg: 0 8px 32px rgba(0,0,0,0.12);
+            --shadow-xl: 0 16px 64px rgba(0,0,0,0.16);
+            --blur-bg: rgba(255, 255, 255, 0.72);
+            --blur-border: rgba(255, 255, 255, 0.18);
+        }
+
+        /* Dark Mode Variables - Apple Dark Mode */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --light-bg: #000000;
+                --dark-bg: #1C1C1E;
+                --text-color: #F5F5F7;
+                --text-secondary: #98989D;
+                --text-tertiary: #6E6E73;
+                --border-color: #38383A;
+                --card-bg: #1C1C1E;
+                --shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+                --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
+                --shadow-lg: 0 8px 32px rgba(0,0,0,0.5);
+                --shadow-xl: 0 16px 64px rgba(0,0,0,0.6);
+                --blur-bg: rgba(28, 28, 30, 0.8);
+                --blur-border: rgba(255, 255, 255, 0.1);
+            }
+            
+            body {
+                background: var(--light-bg);
+                color: var(--text-color);
+            }
+            
+            .nav {
+                background: var(--blur-bg);
+                backdrop-filter: saturate(180%) blur(20px);
+                -webkit-backdrop-filter: saturate(180%) blur(20px);
+            }
+            
+            .container {
+                background: var(--card-bg);
+            }
+            
+            .section {
+                border-bottom-color: var(--border-color);
+            }
+            
+            .section h2,
+            .section h3 {
+                color: var(--text-color);
+            }
+            
+            .nav-links a {
+                color: var(--text-color);
+            }
+            
+            .highlight-box {
+                background: rgba(255, 255, 255, 0.06);
+                border-color: var(--border-color);
+            }
+            
+            .section a {
+                color: #64B5F6;
+            }
+            
+            .section a:hover {
+                color: #90CAF9;
+            }
+            
+            .header {
+                background: var(--card-bg);
+            }
+            
+            .toc {
+                background: var(--card-bg);
+                border-color: var(--border-color);
+            }
+            
+            .toc a:hover {
+                background: rgba(0, 122, 255, 0.15);
+            }
+            
+            .section-divider {
+                background: var(--border-color);
+            }
+            
+            .contact-item {
+                background: rgba(255, 255, 255, 0.05);
+            }
+            
+            .contact-item:hover {
+                background: rgba(255, 255, 255, 0.1);
+            }
         }
 
         * {
@@ -29,87 +148,88 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.7;
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
             color: var(--text-color);
             background: var(--light-bg);
             overflow-x: hidden;
+            font-size: 17px;
+            letter-spacing: -0.01em;
         }
 
-        /* Header */
+        /* Header - Apple Legal / Editorial style */
         .header {
-            background: var(--gradient);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
+            background: var(--card-bg);
+            color: var(--text-color);
+            padding: 64px 0 48px;
+            text-align: left;
             position: relative;
-            overflow: hidden;
-        }
-
-        .header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-            opacity: 0.3;
+            border-bottom: 0.5px solid var(--border-color);
         }
 
         .header-content {
-            position: relative;
-            z-index: 1;
-            max-width: 1200px;
+            max-width: 692px;
             margin: 0 auto;
             padding: 0 2rem;
         }
 
         .app-icon {
-            width: 80px;
-            height: 80px;
-            background: rgba(255,255,255,0.2);
-            border-radius: 20px;
-            margin: 0 auto 1rem;
-            display: flex;
+            width: 56px;
+            height: 56px;
+            background: var(--light-bg);
+            border-radius: 12px;
+            margin: 0 0 24px 0;
+            display: inline-flex;
             align-items: center;
             justify-content: center;
-            font-size: 2rem;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.3);
+            font-size: 1.5rem;
+            color: var(--primary-color);
         }
 
         .header h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: -0.025em;
+            line-height: 1.1;
+            color: var(--text-color);
         }
 
         .header .subtitle {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            font-weight: 300;
+            font-size: 19px;
+            color: var(--text-secondary);
+            font-weight: 400;
+            letter-spacing: -0.01em;
+            line-height: 1.42;
         }
 
-        /* Navigation */
+        /* Navigation - Apple Glassmorphism */
         .nav {
-            background: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background: var(--blur-bg);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            border-bottom: 0.5px solid var(--border-color);
             position: sticky;
             top: 0;
             z-index: 100;
+            transition: background 0.3s ease;
         }
 
         .nav-content {
-            max-width: 1200px;
+            max-width: 692px;
             margin: 0 auto;
             padding: 0 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 60px;
+            height: 44px;
         }
 
         .nav-links {
@@ -118,12 +238,36 @@
             gap: 2rem;
         }
 
+        /* Mobile Menu Toggle */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-color);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .menu-toggle:hover {
+            color: var(--primary-color);
+        }
+
+        .menu-toggle:focus {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+            border-radius: 4px;
+        }
+
         .nav-links a {
             text-decoration: none;
             color: var(--text-color);
-            font-weight: 500;
-            transition: color 0.3s ease;
+            font-weight: 400;
+            font-size: 17px;
+            transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
+            padding: 8px 0;
         }
 
         .nav-links a:hover {
@@ -133,42 +277,54 @@
         .nav-links a::after {
             content: '';
             position: absolute;
-            bottom: -5px;
+            bottom: 0;
             left: 0;
             width: 0;
             height: 2px;
             background: var(--primary-color);
-            transition: width 0.3s ease;
+            transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border-radius: 1px;
         }
 
         .nav-links a:hover::after {
             width: 100%;
         }
 
+        .nav-lang-wrap { display: flex; align-items: center; }
+        .lang-select {
+            font-size: 15px;
+            padding: 6px 28px 6px 10px;
+            border-radius: 8px;
+            border: 0.5px solid var(--border-color);
+            background: var(--card-bg);
+            color: var(--text-color);
+            cursor: pointer;
+            -webkit-appearance: none;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%2386868B' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 8px center;
+        }
+        .lang-select:hover, .lang-select:focus { border-color: var(--primary-color); outline: none; }
+
         /* Main Content */
         .main-content {
-            max-width: 1000px;
+            max-width: 692px;
             margin: 0 auto;
-            padding: 3rem 2rem;
+            padding: 48px 2rem 64px;
         }
 
         .container {
-            background: white;
-            border-radius: 20px;
-            box-shadow: var(--shadow);
+            background: var(--card-bg);
+            border-radius: 16px;
             overflow: hidden;
-            margin-bottom: 2rem;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .container:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-hover);
+            margin-bottom: 32px;
+            border: 0.5px solid var(--border-color);
         }
 
         .section {
-            padding: 3rem;
-            border-bottom: 1px solid var(--border-color);
+            padding: 48px 40px;
+            border-bottom: 0.5px solid var(--border-color);
         }
 
         .section:last-child {
@@ -178,98 +334,150 @@
         .section-header {
             display: flex;
             align-items: center;
-            margin-bottom: 2rem;
+            margin-bottom: 32px;
         }
 
         .section-icon {
-            width: 50px;
-            height: 50px;
-            background: var(--gradient);
+            width: 48px;
+            height: 48px;
+            background: var(--light-bg);
             border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
-            font-size: 1.5rem;
-            margin-right: 1rem;
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            margin-right: 16px;
         }
 
         .section h2 {
-            color: var(--secondary-color);
-            font-size: 2rem;
-            font-weight: 700;
+            color: var(--text-color);
+            font-size: 32px;
+            font-weight: 600;
             margin: 0;
+            letter-spacing: -0.025em;
+            line-height: 1.125;
         }
 
         .section h3 {
-            color: var(--secondary-color);
-            font-size: 1.5rem;
+            color: var(--text-color);
+            font-size: 22px;
             font-weight: 600;
-            margin: 2rem 0 1rem;
-            display: flex;
-            align-items: center;
+            margin: 40px 0 12px;
+            letter-spacing: -0.02em;
+            line-height: 1.18;
         }
 
-        .section h3::before {
-            content: '';
-            width: 4px;
-            height: 20px;
-            background: var(--primary-color);
+        .section h3:first-of-type {
+            margin-top: 0;
+        }
+
+        .section h3 i {
             margin-right: 10px;
-            border-radius: 2px;
+            color: var(--text-tertiary);
+            font-size: 18px;
+        }
+
+        .terms-section h3::before {
+            margin-right: 8px;
+        }
+
+        .section p {
+            color: var(--text-color);
+            font-size: 17px;
+            line-height: 1.47059;
+            margin-bottom: 12px;
         }
 
         .app-name {
-            font-weight: 700;
+            font-weight: 600;
             color: var(--primary-color);
-            background: linear-gradient(45deg, var(--primary-color), #5dade2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
         }
 
         .highlight-box {
-            background: linear-gradient(135deg, #f8f9ff 0%, #e8f4fd 100%);
-            border-left: 4px solid var(--primary-color);
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 0 10px 10px 0;
+            background: var(--light-bg);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin: 28px 0;
+            border: 0.5px solid var(--border-color);
         }
 
         .highlight-box p {
             margin: 0;
-            font-weight: 500;
+            font-weight: 400;
+            color: var(--text-color);
+            font-size: 17px;
+            line-height: 1.47059;
+        }
+
+        /* Link Styles - Apple Style */
+        .section a {
+            color: var(--primary-color);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            font-weight: 400;
+        }
+
+        .section a:hover {
+            color: var(--primary-hover);
+            border-bottom-color: var(--primary-color);
+        }
+
+        .section a:focus {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+            border-radius: 4px;
+            border-bottom-color: transparent;
+        }
+
+        .section a[target="_blank"]::after {
+            content: ' \f35d';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            font-size: 0.75em;
+            margin-left: 4px;
+            opacity: 0.6;
         }
 
         .last-updated {
-            background: var(--gradient-secondary);
-            color: white;
-            padding: 1rem 1.5rem;
-            border-radius: 10px;
-            text-align: center;
-            font-weight: 500;
-            margin: 2rem 0;
+            color: var(--text-secondary);
+            font-size: 13px;
+            font-weight: 400;
+            margin: 40px 0 0;
+            padding-top: 24px;
+            border-top: 0.5px solid var(--border-color);
+        }
+
+        .last-updated i {
+            margin-right: 6px;
+            color: var(--text-tertiary);
         }
 
         ul {
             padding-left: 0;
             list-style: none;
+            margin: 16px 0;
         }
 
         li {
-            margin-bottom: 0.8rem;
-            padding-left: 2rem;
+            margin-bottom: 8px;
+            padding-left: 24px;
             position: relative;
+            color: var(--text-color);
+            font-size: 17px;
+            line-height: 1.47059;
         }
 
         li::before {
-            content: '✓';
+            content: '·';
             position: absolute;
             left: 0;
             top: 0;
-            color: var(--success-color);
-            font-weight: bold;
-            font-size: 1.1rem;
+            color: var(--text-tertiary);
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 1.3;
         }
 
         /* Interactive Elements */
@@ -294,73 +502,202 @@
             max-height: 1000px;
         }
 
-        /* Footer */
+        /* Footer - Apple Style */
         .footer {
             background: var(--dark-bg);
-            color: white;
+            color: var(--text-color);
             text-align: center;
-            padding: 3rem 2rem;
-            margin-top: 3rem;
+            padding: 64px 2rem;
+            margin-top: 64px;
         }
 
         .footer-content {
-            max-width: 1200px;
+            max-width: 692px;
             margin: 0 auto;
         }
 
         .footer h3 {
-            margin-bottom: 1rem;
-            color: white;
+            margin-bottom: 16px;
+            color: var(--text-color);
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+
+        .footer p {
+            color: var(--text-secondary);
+            font-size: 17px;
+            margin-bottom: 8px;
         }
 
         .contact-info {
             display: flex;
             justify-content: center;
-            gap: 2rem;
-            margin-top: 2rem;
+            gap: 32px;
+            margin-top: 32px;
             flex-wrap: wrap;
         }
 
         .contact-item {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
-            color: #bdc3c7;
+            gap: 10px;
+            color: var(--text-secondary);
+            font-size: 17px;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            padding: 12px 20px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .contact-item:hover {
+            color: var(--text-color);
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
         }
 
         .contact-item i {
             color: var(--primary-color);
+            font-size: 18px;
+            width: 20px;
+            text-align: center;
         }
 
-        /* Responsive Design */
+        .contact-item a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* Mobile Menu Styles - Apple Style */
         @media (max-width: 768px) {
-            .header h1 {
-                font-size: 2rem;
+            .menu-toggle {
+                display: block;
             }
             
             .nav-links {
+                position: fixed;
+                top: 44px;
+                left: 0;
+                right: 0;
+                background: var(--blur-bg);
+                backdrop-filter: saturate(180%) blur(20px);
+                -webkit-backdrop-filter: saturate(180%) blur(20px);
+                flex-direction: column;
+                padding: 16px;
+                box-shadow: var(--shadow-lg);
+                border-bottom: 0.5px solid var(--border-color);
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                gap: 4px;
+            }
+            
+            .nav-links.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            .nav-links li {
+                width: 100%;
+            }
+            
+            .nav-links a {
+                display: block;
+                padding: 12px 16px;
+                border-radius: 10px;
+                transition: background 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+                font-size: 17px;
+            }
+            
+            .nav-links a:hover,
+            .nav-links a:focus {
+                background: rgba(0, 122, 255, 0.1);
+            }
+            
+            .nav-links a::after {
                 display: none;
+            }
+        }
+
+        /* Responsive Design - Apple Style */
+        @media (max-width: 768px) {
+            body {
+                font-size: 17px;
+            }
+            
+            .header {
+                padding: 48px 0 36px;
+            }
+            
+            .header h1 {
+                font-size: 32px;
+            }
+            
+            .header .subtitle {
+                font-size: 17px;
+            }
+            
+            .app-icon {
+                width: 48px;
+                height: 48px;
+                font-size: 1.25rem;
+                border-radius: 12px;
             }
             
             .section {
-                padding: 2rem 1.5rem;
+                padding: 32px 24px;
+            }
+            
+            .section h2 {
+                font-size: 32px;
+            }
+            
+            .section h3 {
+                font-size: 24px;
+                margin: 32px 0 12px;
             }
             
             .main-content {
-                padding: 2rem 1rem;
+                padding: 40px 1rem;
+            }
+            
+            .container {
+                border-radius: 16px;
             }
             
             .contact-info {
                 flex-direction: column;
-                gap: 1rem;
+                gap: 20px;
+            }
+            
+            .scroll-top {
+                width: 48px;
+                height: 48px;
+                bottom: 20px;
+                right: 20px;
+                border-radius: 24px;
+            }
+            
+            .toc {
+                padding: 20px;
+            }
+            
+            .toc h3 {
+                font-size: 20px;
+            }
+            
+            .section-divider {
+                margin: 32px 0;
             }
         }
 
-        /* Animations */
+        /* Animations - Apple Style */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
-                transform: translateY(30px);
+                transform: translateY(20px);
             }
             to {
                 opacity: 1;
@@ -369,170 +706,548 @@
         }
 
         .fade-in {
-            animation: fadeInUp 0.6s ease-out;
+            animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
         }
 
-        /* Scroll to top button */
+        /* Scroll to top button - Apple Style */
         .scroll-top {
             position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            width: 50px;
-            height: 50px;
+            bottom: 24px;
+            right: 24px;
+            width: 56px;
+            height: 56px;
             background: var(--primary-color);
             color: white;
             border: none;
-            border-radius: 50%;
+            border-radius: 28px;
             cursor: pointer;
             display: none;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
-            box-shadow: var(--shadow);
-            transition: all 0.3s ease;
+            font-size: 18px;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             z-index: 1000;
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
         }
 
         .scroll-top:hover {
-            background: var(--secondary-color);
-            transform: translateY(-3px);
+            background: var(--primary-hover);
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .scroll-top:active {
+            transform: translateY(-2px) scale(1.02);
         }
 
         .scroll-top.show {
             display: flex;
         }
+
+        /* Print Styles */
+        @media print {
+            .nav,
+            .scroll-top,
+            .menu-toggle,
+            .footer-actions,
+            .lang-select,
+            .nav-lang-wrap {
+                display: none !important;
+            }
+            
+            .header {
+                background: #f5f5f7 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            
+            .container {
+                box-shadow: none;
+                page-break-inside: avoid;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+                border-bottom: 1px solid #ddd;
+            }
+            
+            body {
+                background: white;
+                color: black;
+            }
+            
+            a {
+                color: #3498db;
+                text-decoration: underline;
+            }
+            
+            .footer {
+                background: #2c3e50 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+
+        /* Accessibility Improvements */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        /* Focus Styles for Keyboard Navigation */
+        a:focus,
+        button:focus {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+            border-radius: 4px;
+        }
+
+        /* Skip to Main Content Link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary-color);
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            z-index: 1000;
+            border-radius: 0 0 4px 0;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Reading Progress Indicator */
+        .reading-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: var(--primary-color);
+            z-index: 1001;
+            transition: width 0.1s ease-out;
+            box-shadow: 0 0 10px rgba(0, 122, 255, 0.5);
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 32px;
+            box-shadow: var(--shadow-sm);
+            border: 0.5px solid var(--border-color);
+        }
+
+        .toc h3 {
+            font-size: 22px;
+            font-weight: 600;
+            margin: 0 0 16px 0;
+            color: var(--text-color);
+            letter-spacing: -0.01em;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+            padding-left: 0;
+        }
+
+        .toc li::before {
+            display: none;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            border-radius: 8px;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .toc a:hover {
+            background: rgba(0, 122, 255, 0.08);
+            color: var(--primary-color);
+            transform: translateX(4px);
+        }
+
+        .toc a i {
+            margin-right: 8px;
+            font-size: 12px;
+            opacity: 0.6;
+        }
+
+        /* Section Dividers */
+        .section-divider {
+            height: 1px;
+            background: var(--border-color);
+            margin: 48px 0;
+            position: relative;
+        }
+
+        .section-divider::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 1px;
+            background: var(--primary-color);
+            opacity: 0.3;
+        }
+
+        /* Enhanced Paragraph Spacing */
+        .section p + p {
+            margin-top: 20px;
+        }
+
+        /* Better List Styling */
+        .section ul {
+            margin: 24px 0;
+        }
+
+        .section ul + p {
+            margin-top: 24px;
+        }
+
+        .section p + ul {
+            margin-top: 20px;
+        }
+
+        /* Terms Section Numbering */
+        .terms-container {
+            counter-reset: section-counter;
+        }
+
+        .terms-section {
+            counter-increment: section-counter;
+        }
+
+        .terms-section h3::before {
+            content: counter(section-counter) '. ';
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .last-updated {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Better Strong Text */
+        .section strong {
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        /* Improved Contact Items */
+        .contact-item a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .contact-item a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-actions {
+            margin-bottom: 24px;
+        }
+        .footer-print-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            font-size: 15px;
+            color: var(--text-secondary);
+            background: rgba(255, 255, 255, 0.08);
+            border: 0.5px solid var(--border-color);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+        }
+        .footer-print-btn:hover {
+            color: var(--text-color);
+            background: rgba(255, 255, 255, 0.12);
+            border-color: var(--text-tertiary);
+        }
+        .last-updated-sep { color: var(--text-tertiary); margin: 0 4px; }
     </style>
 </head>
 <body>
+    <!-- Reading Progress Indicator -->
+    <div class="reading-progress" id="readingProgress" aria-hidden="true"></div>
+    
+    <!-- Skip to Main Content Link -->
+    <a href="#main-content" class="skip-link" data-i18n="skip_link">Skip to main content</a>
+    
     <!-- Header -->
-    <header class="header">
+    <header class="header" role="banner">
         <div class="header-content">
-            <div class="app-icon">
+            <div class="app-icon" aria-hidden="true">
                 <i class="fas fa-shield-alt"></i>
             </div>
-            <h1>Privacy Policy</h1>
-            <p class="subtitle">Protecting your privacy and data security</p>
+            <h1 data-i18n="header_title">Privacy Policy</h1>
+            <p class="subtitle" data-i18n="header_subtitle"><span class="app-name" id="app-name-hero">Virtual Mic</span> is committed to your privacy. This policy explains how we collect, use, and protect your information in plain language.</p>
         </div>
     </header>
 
     <!-- Navigation -->
-    <nav class="nav">
+    <nav class="nav" role="navigation" aria-label="Main navigation">
         <div class="nav-content">
             <div class="nav-brand">
                 <span class="app-name" id="app-name-nav">Virtual Mic</span>
             </div>
-            <ul class="nav-links">
-                <li><a href="#privacy">Privacy</a></li>
-                <li><a href="#terms">Terms</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" id="menuToggle" data-i18n-aria="menu_aria">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+            <ul class="nav-links" id="navLinks" role="menubar">
+                <li role="none"><a href="#privacy" role="menuitem" data-i18n="nav_privacy">Privacy</a></li>
+                <li role="none"><a href="#terms" role="menuitem" data-i18n="nav_terms">Terms</a></li>
+                <li role="none"><a href="#contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+                <li role="none" class="nav-lang-wrap">
+                    <label for="langSelect" class="sr-only" data-i18n="lang_aria">Choose language</label>
+                    <select id="langSelect" class="lang-select" aria-label="Language">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="hi">हिन्दी</option>
+                    </select>
+                </li>
             </ul>
         </div>
     </nav>
 
     <!-- Main Content -->
-    <main class="main-content">
+    <main class="main-content" id="main-content" role="main">
+        <!-- Table of Contents -->
+        <div class="container fade-in toc">
+            <h3><i class="fas fa-list" aria-hidden="true"></i> <span data-i18n="toc_title">Contents</span></h3>
+            <ul>
+                <li><a href="#privacy"><i class="fas fa-chevron-right" aria-hidden="true"></i> <span data-i18n="toc_privacy">Privacy Policy</span></a></li>
+                <li><a href="#terms"><i class="fas fa-chevron-right" aria-hidden="true"></i> <span data-i18n="toc_terms">Terms of Service</span></a></li>
+                <li><a href="#contact"><i class="fas fa-chevron-right" aria-hidden="true"></i> <span data-i18n="toc_contact">Contact Information</span></a></li>
+            </ul>
+        </div>
+
         <!-- Privacy Policy Section -->
-        <div class="container fade-in" id="privacy">
+        <article class="container fade-in" id="privacy">
             <div class="section">
                 <div class="section-header">
-                    <div class="section-icon">
+                    <div class="section-icon" aria-hidden="true">
                         <i class="fas fa-user-shield"></i>
                     </div>
-                    <h2>Privacy Policy</h2>
+                    <h2 data-i18n="privacy_h2">Privacy Policy</h2>
                 </div>
                 
                 <div class="highlight-box">
-                    <p><strong>Your privacy is important to us.</strong> It is <span class="app-name" id="app-name-text">Virtual Mic</span>'s policy to respect your privacy regarding any information we may collect from you through our app, <span class="app-name" id="app-name-text2">Virtual Mic</span>.</p>
+                    <p data-i18n="privacy_summary"><strong>Summary.</strong> <span class="app-name" id="app-name-text">Virtual Mic</span> collects minimal data necessary to provide and improve the app. The app may show third-party ads. We do not sell your information. You have choices about how your data is used.</p>
                 </div>
 
-                <h3><i class="fas fa-info-circle"></i> Information Collection</h3>
-                <p>We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we're collecting it and how it will be used.</p>
+                <h3><i class="fas fa-book" aria-hidden="true"></i> <span data-i18n="privacy_h3_definitions">Definitions</span></h3>
+                <p><strong>“We,” “us,” and “our”</strong> mean the operator of <span class="app-name" id="app-name-text-def">Virtual Mic</span> and this service. <strong>“You” and “your”</strong> mean the individual using the app. <strong>“Personal information”</strong> means data that identifies or could reasonably identify you. <strong>“Service”</strong> means the <span class="app-name" id="app-name-text-def2">Virtual Mic</span> app and related offerings. <strong>“Policy”</strong> means this Privacy Policy as updated from time to time.</p>
 
-                <h3><i class="fas fa-database"></i> Data Retention</h3>
-                <p>We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we'll protect within commercially acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying, use or modification.</p>
+                <h3><i class="fas fa-info-circle" aria-hidden="true"></i> <span data-i18n="privacy_h3_info_collect">Information We Collect</span></h3>
+                <p data-i18n="privacy_info_collect">We collect only what we need to deliver the service. This may include information you provide (such as preferences or support requests) and information generated by your use of the app (such as device type and usage). We gather it with your knowledge and consent, and we tell you why we need it.</p>
 
-                <h3><i class="fas fa-share-alt"></i> Information Sharing</h3>
-                <p>We don't share any personally identifying information publicly or with third-parties, except when required to by law.</p>
+                <h3><i class="fas fa-cogs" aria-hidden="true"></i> <span data-i18n="privacy_h3_how_use">How We Use Your Information</span></h3>
+                <p data-i18n="privacy_how_use">We use collected information to operate and improve <span class="app-name" id="app-name-text2">Virtual Mic</span>, to respond to you, to show ads, to measure ad performance, and to comply with the law.</p>
 
-                <h3><i class="fas fa-external-link-alt"></i> External Links</h3>
-                <p>Our app may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites, and cannot accept responsibility or liability for their respective privacy policies.</p>
+                <h3><i class="fas fa-bullhorn" aria-hidden="true"></i> <span data-i18n="privacy_h3_ads">Advertising</span></h3>
+                <p data-i18n="privacy_ads">We use third-party advertising partners to display ads in the app. These partners may collect and process information such as device identifiers (e.g. Advertising ID/IDFA where permitted), IP address, coarse location, ad impressions/clicks, and app usage data to provide, personalize (where allowed), and measure ads. You can control ad personalization through your device settings and, on iOS, through App Tracking Transparency (ATT) prompts where applicable.</p>
 
-                <h3><i class="fas fa-user-check"></i> Your Rights</h3>
-                <p>You are free to refuse our request for your personal information, with the understanding that we may be unable to provide you with some of your desired services.</p>
+                <h3><i class="fas fa-balance-scale" aria-hidden="true"></i> <span data-i18n="privacy_h3_legal_basis">Legal Basis for Processing</span></h3>
+                <p data-i18n="privacy_legal_basis">We process your information only where we have a lawful basis: your consent, performance of a contract with you, our legitimate interests (e.g. improving the service, security), or compliance with a legal obligation. Where we rely on consent, you may withdraw it at any time.</p>
 
-                <h3><i class="fas fa-handshake"></i> Agreement</h3>
-                <p>Your continued use of our app will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, feel free to contact us.</p>
+                <h3><i class="fas fa-database" aria-hidden="true"></i> <span data-i18n="privacy_h3_retention">Data Retention</span></h3>
+                <p data-i18n="privacy_retention">We keep your information only as long as needed to provide the service or as required by law. We protect stored data with reasonable technical and organizational measures against loss, theft, and unauthorized access, disclosure, or use.</p>
+
+                <h3><i class="fas fa-cookie-bite" aria-hidden="true"></i> <span data-i18n="privacy_h3_cookies">Cookies and Similar Technologies</span></h3>
+                <p data-i18n="privacy_cookies">If the app or our website uses cookies, SDKs, or similar technologies (e.g. local storage), we use them to provide functionality, remember preferences, analyse usage, and measure advertising performance. You can manage or disable cookies through your device or browser settings where available and control ad personalization through your device privacy settings.</p>
+
+                <h3><i class="fas fa-share-alt" aria-hidden="true"></i> <span data-i18n="privacy_h3_sharing">Sharing and Disclosure</span></h3>
+                <p data-i18n="privacy_sharing">We do not sell or rent your personally identifying information. We may share information when necessary—for example, to comply with law, to protect rights and safety, with service providers who act on our behalf under confidentiality, and with advertising partners to serve and measure ads (who may process information under their own privacy policies). We do not share your information with third parties for their marketing unrelated to providing ads in the app.</p>
+
+                <h3><i class="fas fa-user-check" aria-hidden="true"></i> <span data-i18n="privacy_h3_rights">Your Rights and Choices</span></h3>
+                <p data-i18n="privacy_rights">You can ask us what data we hold about you, request correction or deletion where applicable, and object to or restrict certain processing. You may also withdraw consent where we rely on it. Refusing or limiting data may affect some features of the app.</p>
+                <p data-i18n="privacy_data_portability">Where applicable (e.g. under GDPR), you have the right to receive your personal data in a structured, commonly used, machine-readable format and to transmit it to another controller. You may also have the right to have your data transferred directly by us where technically feasible.</p>
+
+                <h3><i class="fas fa-lock" aria-hidden="true"></i> <span data-i18n="privacy_h3_security">Security</span></h3>
+                <p data-i18n="privacy_security">We use industry-standard practices to safeguard your information. No method of transmission or storage is completely secure. We do not guarantee that your data will be secure at all times. We are not liable for unauthorized access, loss, or disclosure that results from circumstances beyond our reasonable control (including but not limited to third-party conduct, device compromise, or force majeure). You use the service and provide information at your own risk.</p>
+
+                <h3><i class="fas fa-child" aria-hidden="true"></i> <span data-i18n="privacy_h3_children">Children’s Privacy</span></h3>
+                <p data-i18n="privacy_children">Our app is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided us data, please contact us and we will delete it.</p>
+
+                <h3><i class="fas fa-external-link-alt" aria-hidden="true"></i> <span data-i18n="privacy_h3_third_links">Third-Party Links</span></h3>
+                <p data-i18n="privacy_third_links">The app may link to websites or services we do not operate. We are not responsible for their privacy practices. We encourage you to read their policies.</p>
+
+                <h3><i class="fas fa-globe-americas" aria-hidden="true"></i> <span data-i18n="privacy_h3_international">International Data Transfers</span></h3>
+                <p data-i18n="privacy_international">Your information may be processed in countries other than your own. We ensure appropriate safeguards (e.g. standard contractual clauses, adequacy decisions) where required by law so that your data remains protected to the standard required in your jurisdiction.</p>
+
+                <h3><i class="fas fa-sync-alt" aria-hidden="true"></i> <span data-i18n="privacy_h3_changes">Changes to This Policy</span></h3>
+                <p data-i18n="privacy_changes">We may update this policy at any time. We will post the revised version here and update the “Last updated” date. Your continued use of the app after the revised policy is posted constitutes your acceptance of the updated policy. It is your responsibility to review this policy periodically.</p>
+
+                <h3><i class="fas fa-balance-scale" aria-hidden="true"></i> <span data-i18n="privacy_h3_limitation">Limitation of Liability</span></h3>
+                <p data-i18n="privacy_limitation">To the fullest extent permitted by applicable law, we and our affiliates, officers, directors, and suppliers shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of data, revenue, or profit, arising from or related to this policy, your use of the service, or our handling of your information. Our total liability in connection with this policy or the service shall not exceed the amount you paid us, if any, in the twelve (12) months preceding the claim, or one hundred Indian Rupees (₹100), whichever is greater. Some jurisdictions do not allow certain limitations; where they apply, our liability is limited to the maximum extent permitted by law.</p>
+
+                <h3><i class="fas fa-gavel" aria-hidden="true"></i> <span data-i18n="privacy_h3_no_advice">No Legal Advice</span></h3>
+                <p data-i18n="privacy_no_advice">This policy is for informational purposes only and does not constitute legal advice. You should consult your own legal or privacy advisor for advice specific to your situation.</p>
+
+                <h3><i class="fas fa-comment-dots" aria-hidden="true"></i> <span data-i18n="privacy_h3_complaint">Right to Lodge a Complaint</span></h3>
+                <p data-i18n="privacy_complaint">If you are in the EEA, UK, or another jurisdiction with a data protection authority, you have the right to lodge a complaint with your local supervisory authority if you believe our processing of your personal data infringes applicable law. We encourage you to contact us first so we can address your concerns.</p>
+
+                <h3><i class="fas fa-handshake" aria-hidden="true"></i> <span data-i18n="privacy_h3_agreement">Agreement</span></h3>
+                <p data-i18n="privacy_agreement">By using <span class="app-name" id="app-name-text3">Virtual Mic</span>, you acknowledge that you have read, understood, and agree to this privacy policy. If you do not agree, do not use the app. If you have questions about how we handle your data, please contact us.</p>
+
+                <div class="section-divider" aria-hidden="true"></div>
 
                 <div class="last-updated">
-                    <i class="fas fa-calendar-alt"></i>
-                    This policy is effective as of 19 April 2020
+                    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                    <span data-i18n="last_updated">Last updated: 2 February 2025</span>
+                    <span class="last-updated-sep" aria-hidden="true"> · </span>
+                    <span data-i18n="effective_date">Effective date: 2 February 2025</span>
                 </div>
             </div>
-        </div>
+        </article>
 
         <!-- Terms of Service Section -->
-        <div class="container fade-in" id="terms">
+        <article class="container fade-in terms-container" id="terms">
             <div class="section">
                 <div class="section-header">
-                    <div class="section-icon">
+                    <div class="section-icon" aria-hidden="true">
                         <i class="fas fa-file-contract"></i>
                     </div>
-                    <h2><span class="app-name" id="app-name-text3">Virtual Mic</span> Terms of Service</h2>
+                    <h2 data-i18n="terms_h2"><span class="app-name" id="app-name-text4">Virtual Mic</span> Terms of Service</h2>
                 </div>
 
-                <h3>1. Terms</h3>
-                <p>By accessing our app, <span class="app-name" id="app-name-text4">Virtual Mic</span>, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing <span class="app-name" id="app-name-text5">Virtual Mic</span>. The materials contained in <span class="app-name" id="app-name-text6">Virtual Mic</span> are protected by applicable copyright and trademark law.</p>
+                <h3 class="terms-section"><span data-i18n="terms_h3_definitions">Definitions</span></h3>
+                <p data-i18n="terms_definitions"><strong>“We,” “us,” and “our”</strong> mean the operator of <span class="app-name" id="app-name-text-tdef">Virtual Mic</span>. <strong>“You” and “your”</strong> mean the individual or entity using the service. <strong>“Service”</strong> means the <span class="app-name" id="app-name-text-tdef2">Virtual Mic</span> app, website, and any related content or functionality. <strong>“Content”</strong> means text, graphics, data, software, and other materials made available through the service. <strong>“Terms”</strong> means these Terms of Service as updated from time to time.</p>
 
-                <h3>2. Use License</h3>
-                <p>Permission is granted to temporarily download one copy of <span class="app-name" id="app-name-text7">Virtual Mic</span> per device for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p>
+                <h3 class="terms-section"><span data-i18n="terms_h3_acceptance">Acceptance of Terms</span></h3>
+                <p data-i18n="terms_acceptance">By accessing or using <span class="app-name" id="app-name-text5">Virtual Mic</span>, you agree to these terms of service and to all applicable laws. If you do not agree, you may not use the app. The content and materials in <span class="app-name" id="app-name-text6">Virtual Mic</span> are protected by copyright and trademark law.</p>
+
+                <h3 class="terms-section"><span data-i18n="terms_h3_eligibility">Eligibility</span></h3>
+                <p data-i18n="terms_eligibility">You represent that you are at least 18 years of age (or the age of majority in your jurisdiction) and have the legal capacity to enter into these terms. If you use the service on behalf of an organization, you represent that you have authority to bind that organization. We may refuse service to anyone at any time.</p>
+
+                <h3 class="terms-section"><span data-i18n="terms_h3_ip">Intellectual Property</span></h3>
+                <p data-i18n="terms_ip">The service, including its design, content, code, and materials, is owned by us or our licensors and is protected by copyright, trademark, and other intellectual property laws. Except for the limited license we grant you, you receive no right, title, or interest in or to the service. You may not use our trademarks or branding without our prior written consent.</p>
+
+                <h3 class="terms-section"><span data-i18n="terms_h3_use_license">Use License</span></h3>
+                <p data-i18n="terms_use_license_intro">We grant you a limited, non-exclusive, non-transferable license to use <span class="app-name" id="app-name-text8">Virtual Mic</span> for personal, non-commercial use on your device. You may not:</p>
                 <ul>
-                    <li>modify or copy the materials;</li>
-                    <li>use the materials for any commercial purpose, or for any public display (commercial or non-commercial);</li>
-                    <li>attempt to decompile or reverse engineer any software contained in <span class="app-name" id="app-name-text8">Virtual Mic</span>;</li>
-                    <li>remove any copyright or other proprietary notations from the materials; or</li>
-                    <li>transfer the materials to another person or "mirror" the materials on any other server.</li>
+                    <li data-i18n="terms_use_license_1">copy, modify, or create derivative works;</li>
+                    <li data-i18n="terms_use_license_2">use the app or its content for any commercial or public display;</li>
+                    <li data-i18n="terms_use_license_3">reverse engineer, decompile, or disassemble the software;</li>
+                    <li data-i18n="terms_use_license_4">remove or alter any copyright or proprietary notices; or</li>
+                    <li data-i18n="terms_use_license_5">transfer, sublicense, or mirror the app or its materials.</li>
                 </ul>
-                <p>This license shall automatically terminate if you violate any of these restrictions and may be terminated by <span class="app-name" id="app-name-text9">Virtual Mic</span> at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.</p>
+                <p data-i18n="terms_use_license_outro">This license ends automatically if you breach these terms or when we terminate it. Upon termination, you must stop using the app and delete any copies in your possession.</p>
 
-                <h3>3. Disclaimer</h3>
-                <p>The materials within <span class="app-name" id="app-name-text10">Virtual Mic</span> are provided on an 'as is' basis. <span class="app-name" id="app-name-text11">Virtual Mic</span> makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p>
+                <h3 class="terms-section"><span data-i18n="terms_h3_acceptable_use">Acceptable Use</span></h3>
+                <p data-i18n="terms_acceptable_use">You agree to use the service only for lawful purposes and in accordance with these terms. You may not: use the service in any way that violates law or the rights of others; transmit harmful, offensive, or illegal content; attempt to gain unauthorized access to the service or related systems; interfere with or disrupt the service; or use automated means to access the service without our permission. We may suspend or terminate your access if we believe you have breached this section.</p>
 
-                <p>Further, <span class="app-name" id="app-name-text12">Virtual Mic</span> does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to <span class="app-name" id="app-name-text13">Virtual Mic</span>.</p>
+                <h3 class="terms-section"><span data-i18n="terms_h3_user_content">User Content</span></h3>
+                <p data-i18n="terms_user_content">If the service allows you to submit, post, or transmit content (e.g. feedback, data, or materials), you retain ownership of what you submit but grant us a worldwide, non-exclusive, royalty-free license to use, reproduce, modify, and display that content to operate and improve the service. You represent that you have the right to grant this license and that your content does not infringe any third-party rights. We are not responsible for content you or other users submit.</p>
 
-                <h3>4. Limitations</h3>
-                <p>In no event shall <span class="app-name" id="app-name-text14">Virtual Mic</span> or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use <span class="app-name" id="app-name-text15">Virtual Mic</span>, even if <span class="app-name" id="app-name-text16">Virtual Mic</span> or a <span class="app-name" id="app-name-text17">Virtual Mic</span> authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.</p>
+                <h3 class="terms-section"><span data-i18n="terms_h3_disclaimer">Disclaimer</span></h3>
+                <p data-i18n="terms_disclaimer"><span class="app-name" id="app-name-text11">Virtual Mic</span> is provided “as is.” We disclaim all warranties, express or implied, including merchantability, fitness for a particular purpose, and non-infringement. We do not warrant the accuracy, completeness, or reliability of the app or any linked content.</p>
 
-                <h3>5. Accuracy of materials</h3>
-                <p>The materials appearing in <span class="app-name" id="app-name-text18">Virtual Mic</span> could include technical, typographical, or photographic errors. <span class="app-name" id="app-name-text19">Virtual Mic</span> does not warrant that any of the materials on <span class="app-name" id="app-name-text20">Virtual Mic</span> are accurate, complete or current. <span class="app-name" id="app-name-text21">Virtual Mic</span> may make changes to the materials contained in <span class="app-name" id="app-name-text22">Virtual Mic</span> at any time without notice. However <span class="app-name" id="app-name-text23">Virtual Mic</span> does not make any commitment to update the materials.</p>
+                <h3 class="terms-section"><span data-i18n="terms_h3_indemnification">Indemnification</span></h3>
+                <p data-i18n="terms_indemnification">You agree to indemnify, defend, and hold harmless us, our affiliates, officers, directors, employees, and agents from and against any and all claims, damages, losses, costs, and expenses (including reasonable legal fees) arising from or related to: (a) your use or misuse of the service; (b) your breach of these terms; (c) your violation of any law or third-party right; or (d) any content or data you submit or transmit through the service. We reserve the right to assume exclusive defense and control of any matter subject to indemnification by you, at your expense.</p>
 
-                <h3>6. Links</h3>
-                <p><span class="app-name" id="app-name-text24">Virtual Mic</span> has not reviewed all of the sites linked to its app and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by <span class="app-name" id="app-name-text25">Virtual Mic</span> of the site. Use of any such linked website is at the user's own risk.</p>
+                <h3 class="terms-section"><span data-i18n="terms_h3_limitation">Limitation of Liability</span></h3>
+                <p data-i18n="terms_limitation">To the fullest extent permitted by law, <span class="app-name" id="app-name-text15">Virtual Mic</span>, its operators, and its suppliers shall not be liable for any indirect, incidental, special, consequential, or punitive damages (including loss of data, profit, goodwill, or business interruption) arising from your use or inability to use the app. In no event shall our total liability to you for all claims exceed the amount you paid us, if any, in the twelve (12) months preceding the claim, or one hundred Indian Rupees (₹100), whichever is greater. Some jurisdictions do not allow these limitations; where they apply, our liability is limited to the maximum extent permitted by law.</p>
 
-                <h3>7. Modifications</h3>
-                <p><span class="app-name" id="app-name-text26">Virtual Mic</span> may revise these terms of service for its app at any time without notice. By using <span class="app-name" id="app-name-text27">Virtual Mic</span> you are agreeing to be bound by the then current version of these terms of service.</p>
+                <h3 class="terms-section"><span data-i18n="terms_h3_termination">Termination</span></h3>
+                <p data-i18n="terms_termination">We may suspend or terminate your access to the service at any time, with or without cause or notice, and without liability to you. Upon termination, your right to use the service ceases immediately. Provisions that by their nature should survive (including indemnification, limitation of liability, disclaimer, and governing law) will survive termination.</p>
 
-                <h3>8. Governing Law</h3>
-                <p>These terms and conditions are governed by and construed in accordance with the laws of Haryana and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>
+                <h3 class="terms-section"><span data-i18n="terms_h3_revisions">Revisions</span></h3>
+                <p data-i18n="terms_revisions">Content in <span class="app-name" id="app-name-text19">Virtual Mic</span> may contain errors or be out of date. We may change or update the app at any time without notice and have no obligation to update materials.</p>
+
+                <h3 class="terms-section"><span data-i18n="terms_h3_third_links">Third-Party Links</span></h3>
+                <p data-i18n="terms_third_links">The app may link to third-party sites. We are not responsible for their content or practices. Inclusion of a link does not imply endorsement. Use of linked sites is at your own risk.</p>
+
+                <h3 class="terms-section"><span data-i18n="terms_h3_changes">Changes to Terms</span></h3>
+                <p data-i18n="terms_changes">We may update these terms at any time. The current version is posted here. Continued use of <span class="app-name" id="app-name-text27">Virtual Mic</span> after changes means you accept the updated terms.</p>
+
+                <h3 class="terms-section"><span data-i18n="terms_h3_governing">Governing Law and Disputes</span></h3>
+                <p data-i18n="terms_governing">These terms are governed by the laws of India, without regard to conflict-of-law principles. You agree to the exclusive jurisdiction of the courts in Haryana, India, for any dispute arising from or related to these terms or the service. You waive any objection to venue or forum.</p>
+
+                <h3 class="terms-section"><span data-i18n="terms_h3_force_majeure">Force Majeure</span></h3>
+                <p data-i18n="terms_force_majeure">We are not liable for any failure or delay in performing our obligations due to circumstances beyond our reasonable control, including but not limited to acts of God, war, terrorism, pandemic, government action, embargo, labour dispute, failure of third-party services, or interruption of power or communications.</p>
+
+                <h3 class="terms-section"><span data-i18n="terms_h3_assignment">Assignment</span></h3>
+                <p data-i18n="terms_assignment">We may assign or transfer these terms, or our rights or obligations under them, to any affiliate or in connection with a merger, sale, or restructuring, without your consent. You may not assign or transfer your rights or obligations under these terms without our prior written consent. Any attempted assignment in violation of this section is void.</p>
+
+                <h3 class="terms-section"><span data-i18n="terms_h3_export">Export Compliance</span></h3>
+                <p data-i18n="terms_export">You may not use, export, re-export, or transfer the service or any portion of it except in compliance with all applicable export and import laws and regulations. You represent that you are not located in a country subject to embargo and are not on any government list of prohibited or restricted parties.</p>
+
+                <h3 class="terms-section"><span data-i18n="terms_h3_severability">Severability</span></h3>
+                <p data-i18n="terms_severability">If any provision of these terms is held invalid or unenforceable by a court, the remaining provisions will remain in full force and effect. The invalid or unenforceable provision shall be modified to the minimum extent necessary to make it valid and enforceable while preserving the parties’ intent.</p>
+
+                <h3 class="terms-section"><span data-i18n="terms_h3_entire">Entire Agreement and Waiver</span></h3>
+                <p data-i18n="terms_entire">These terms, together with our Privacy Policy and any other policies we publish for the service, constitute the entire agreement between you and us regarding the service and supersede any prior agreements. Our failure to enforce any right or provision of these terms shall not constitute a waiver of such right or provision. No waiver shall be effective unless in writing signed by us.</p>
+
+                <h3 class="terms-section"><span data-i18n="terms_h3_no_third_party">No Third-Party Rights</span></h3>
+                <p data-i18n="terms_no_third_party">These terms do not create any third-party beneficiary rights. Only you and we have rights under these terms.</p>
             </div>
-        </div>
+        </article>
     </main>
 
     <!-- Footer -->
-    <footer class="footer" id="contact">
+    <footer class="footer" id="contact" role="contentinfo">
         <div class="footer-content">
-            <h3>Contact Us</h3>
-            <p>If you have any questions about this Privacy Policy or Terms of Service, please contact us:</p>
+            <h3 data-i18n="footer_title">Contact Us</h3>
+            <p data-i18n="footer_question">If you have any questions about this Privacy Policy or Terms of Service, please contact us:</p>
+            <div class="footer-actions">
+                <button type="button" class="footer-print-btn" onclick="window.print();" aria-label="Print this page" data-i18n-aria="print_aria">
+                    <i class="fas fa-print" aria-hidden="true"></i> <span data-i18n="print_page">Print this page</span>
+                </button>
+            </div>
             <div class="contact-info">
                 <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>privacy@aryansbtloe.com</span>
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <a href="mailto:alok.singh.confident@gmail.com">alok.singh.confident@gmail.com</a>
                 </div>
                 <div class="contact-item">
-                    <i class="fas fa-globe"></i>
-                    <span>www.aryansbtloe.com</span>
+                    <i class="fas fa-globe" aria-hidden="true"></i>
+                    <a href="https://aryansbtloe.github.io/" target="_blank" rel="noopener noreferrer">https://aryansbtloe.github.io/</a>
                 </div>
                 <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                     <span>Haryana, India</span>
                 </div>
             </div>
@@ -540,24 +1255,193 @@
     </footer>
 
     <!-- Scroll to Top Button -->
-    <button class="scroll-top" id="scrollTop">
-        <i class="fas fa-arrow-up"></i>
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top" data-i18n-aria="scroll_top_aria">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
     </button>
 
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Privacy Policy - Virtual Mic",
+        "description": "Privacy Policy and Terms of Service for Virtual Mic. How we collect, use, and protect your information.",
+        "url": "https://aryansbtloe.github.io/privacy-policy/",
+        "inLanguage": "en",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "Aryansbtloe",
+            "url": "https://aryansbtloe.github.io/"
+        },
+        "about": {
+            "@type": "Thing",
+            "name": "Privacy Policy"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Aryansbtloe",
+            "url": "https://aryansbtloe.github.io/",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "alok.singh.confident@gmail.com",
+                "contactType": "Customer Service"
+            }
+        }
+    }
+    </script>
+
+    <script src="translations.js"></script>
     <script>
+        // --- Localisation (i18n) ---
+        var SUPPORTED_LANGS = ['en', 'es', 'hi'];
+        var LANG_DEFAULT = 'en';
+
+        function escapeHtml(text) {
+            var div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function getAppName() {
+            return (new URLSearchParams(window.location.search)).get('app') || 'Virtual Mic';
+        }
+
+        function getPreferredLang() {
+            var params = new URLSearchParams(window.location.search);
+            var lang = params.get('lang');
+            if (lang && SUPPORTED_LANGS.indexOf(lang) !== -1) return lang;
+            try {
+                lang = localStorage.getItem('privacy-lang');
+                if (lang && SUPPORTED_LANGS.indexOf(lang) !== -1) return lang;
+            } catch (e) {}
+
+            // Browser auto-detect (e.g. "es-ES" -> "es")
+            function normalizeLangTag(tag) {
+                if (!tag) return null;
+                var t = String(tag).toLowerCase();
+                // exact match
+                if (SUPPORTED_LANGS.indexOf(t) !== -1) return t;
+                // primary subtag
+                var primary = t.split('-')[0];
+                if (SUPPORTED_LANGS.indexOf(primary) !== -1) return primary;
+                return null;
+            }
+
+            try {
+                var candidates = [];
+                if (Array.isArray(navigator.languages)) candidates = candidates.concat(navigator.languages);
+                if (navigator.language) candidates.push(navigator.language);
+                for (var i = 0; i < candidates.length; i++) {
+                    var normalized = normalizeLangTag(candidates[i]);
+                    if (normalized) return normalized;
+                }
+            } catch (e) {}
+            return LANG_DEFAULT;
+        }
+
+        function applyTranslations(lang, appName) {
+            if (!window.TRANSLATIONS || !window.TRANSLATIONS[lang]) lang = LANG_DEFAULT;
+            var T = window.TRANSLATIONS[lang] || window.TRANSLATIONS[LANG_DEFAULT];
+            var T_en = window.TRANSLATIONS.en;
+            document.documentElement.lang = lang === 'hi' ? 'hi' : lang === 'es' ? 'es' : 'en';
+            var nodes = document.querySelectorAll('[data-i18n]');
+            appName = appName || getAppName();
+            for (var i = 0; i < nodes.length; i++) {
+                var el = nodes[i];
+                var key = el.getAttribute('data-i18n');
+                var raw = (T && T[key]) || (T_en && T_en[key]) || el.getAttribute('data-i18n-default') || '';
+                var html = raw.replace(/\{\{appName\}\}/g, escapeHtml(appName));
+                el.innerHTML = html;
+            }
+            document.querySelectorAll('[data-i18n-aria]').forEach(function(el) {
+                var key = el.getAttribute('data-i18n-aria');
+                var val = (T && T[key]) || (T_en && T_en[key]) || '';
+                if (val) el.setAttribute('aria-label', val);
+            });
+        }
+
+        function setLanguage(lang) {
+            if (SUPPORTED_LANGS.indexOf(lang) === -1) return;
+            try { localStorage.setItem('privacy-lang', lang); } catch (e) {}
+            var url = new URL(window.location.href);
+            url.searchParams.set('lang', lang);
+            window.history.replaceState({}, '', url.toString());
+            applyTranslations(lang, getAppName());
+            var sel = document.getElementById('langSelect');
+            if (sel) sel.value = lang;
+        }
+
         // Function to update app name from URL parameter
         function updateAppName() {
             const urlParams = new URLSearchParams(window.location.search);
             const appName = urlParams.get('app') || 'Virtual Mic';
             
             // Update all elements with app-name-text class
-            const elements = document.querySelectorAll('[id^="app-name-text"], #app-name-nav');
+            const elements = document.querySelectorAll('[id^="app-name-text"], #app-name-nav, #app-name-hero');
             elements.forEach(element => {
                 element.textContent = appName;
             });
             
-            // Update title
+            // Update title and meta tags
             document.title = `Privacy Policy - ${appName}`;
+            
+            // Update meta description
+            const metaDescription = document.querySelector('meta[name="description"]');
+            if (metaDescription) {
+                metaDescription.content = `Privacy Policy and Terms of Service for ${appName}. Clear explanation of how we collect, use, and protect your information.`;
+            }
+            
+            // Update Open Graph tags
+            const ogTitle = document.querySelector('meta[property="og:title"]');
+            const ogDescription = document.querySelector('meta[property="og:description"]');
+            if (ogTitle) ogTitle.content = `Privacy Policy - ${appName}`;
+            if (ogDescription) ogDescription.content = `Privacy Policy and Terms of Service for ${appName}. Clear explanation of how we collect, use, and protect your information.`;
+        }
+
+        // Mobile menu toggle functionality
+        function initMobileMenu() {
+            const menuToggle = document.getElementById('menuToggle');
+            const navLinks = document.getElementById('navLinks');
+            
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener('click', function() {
+                    const isExpanded = navLinks.classList.toggle('active');
+                    menuToggle.setAttribute('aria-expanded', isExpanded);
+                    
+                    // Update icon
+                    const icon = menuToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+                
+                // Close menu when clicking on a link
+                navLinks.addEventListener('click', function(e) {
+                    if (e.target.tagName === 'A') {
+                        navLinks.classList.remove('active');
+                        menuToggle.setAttribute('aria-expanded', 'false');
+                        const icon = menuToggle.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    }
+                });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', function(e) {
+                    if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+                        navLinks.classList.remove('active');
+                        menuToggle.setAttribute('aria-expanded', 'false');
+                        const icon = menuToggle.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    }
+                });
+            }
         }
 
         // Smooth scrolling for navigation links
@@ -569,10 +1453,17 @@
                     const targetId = this.getAttribute('href');
                     const targetElement = document.querySelector(targetId);
                     if (targetElement) {
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
+                        // Calculate offset for sticky nav
+                        const navHeight = document.querySelector('.nav').offsetHeight;
+                        const targetPosition = targetElement.offsetTop - navHeight;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
                         });
+                        
+                        // Update URL without jumping
+                        history.pushState(null, null, targetId);
                     }
                 });
             });
@@ -582,11 +1473,21 @@
         function initScrollToTop() {
             const scrollTopBtn = document.getElementById('scrollTop');
             
+            if (!scrollTopBtn) return;
+            
+            // Throttle scroll event for better performance
+            let ticking = false;
             window.addEventListener('scroll', function() {
-                if (window.pageYOffset > 300) {
-                    scrollTopBtn.classList.add('show');
-                } else {
-                    scrollTopBtn.classList.remove('show');
+                if (!ticking) {
+                    window.requestAnimationFrame(function() {
+                        if (window.pageYOffset > 300) {
+                            scrollTopBtn.classList.add('show');
+                        } else {
+                            scrollTopBtn.classList.remove('show');
+                        }
+                        ticking = false;
+                    });
+                    ticking = true;
                 }
             });
 
@@ -600,6 +1501,16 @@
 
         // Intersection Observer for fade-in animations
         function initAnimations() {
+            // Check if IntersectionObserver is supported
+            if (!('IntersectionObserver' in window)) {
+                // Fallback: show all elements immediately
+                document.querySelectorAll('.fade-in').forEach(el => {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                });
+                return;
+            }
+
             const observerOptions = {
                 threshold: 0.1,
                 rootMargin: '0px 0px -50px 0px'
@@ -610,6 +1521,8 @@
                     if (entry.isIntersecting) {
                         entry.target.style.opacity = '1';
                         entry.target.style.transform = 'translateY(0)';
+                        // Unobserve after animation to improve performance
+                        observer.unobserve(entry.target);
                     }
                 });
             }, observerOptions);
@@ -623,16 +1536,95 @@
             });
         }
 
+        // Reading progress indicator
+        function initReadingProgress() {
+            const progressBar = document.getElementById('readingProgress');
+            if (!progressBar) return;
+
+            function updateProgress() {
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight;
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
+                progressBar.style.width = Math.min(scrollPercent, 100) + '%';
+            }
+
+            // Throttle scroll events
+            let ticking = false;
+            window.addEventListener('scroll', function() {
+                if (!ticking) {
+                    window.requestAnimationFrame(function() {
+                        updateProgress();
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            });
+
+            // Initial update
+            updateProgress();
+        }
+
+        // Enhanced table of contents navigation
+        function initTableOfContents() {
+            const tocLinks = document.querySelectorAll('.toc a');
+            tocLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        const navHeight = document.querySelector('.nav').offsetHeight;
+                        const targetPosition = targetElement.offsetTop - navHeight - 20;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Update URL
+                        history.pushState(null, null, targetId);
+                    }
+                });
+            });
+        }
+
         // Initialize everything when DOM is loaded
         document.addEventListener('DOMContentLoaded', function() {
+            var lang = getPreferredLang();
+            applyTranslations(lang, getAppName());
             updateAppName();
+            var langSelect = document.getElementById('langSelect');
+            if (langSelect) {
+                langSelect.value = lang;
+                langSelect.addEventListener('change', function() { setLanguage(this.value); });
+            }
+            initMobileMenu();
             initSmoothScrolling();
             initScrollToTop();
             initAnimations();
+            initReadingProgress();
+            initTableOfContents();
         });
 
         // Update app name when URL changes (for SPA-like behavior)
         window.addEventListener('popstate', updateAppName);
+        
+        // Handle hash changes
+        window.addEventListener('hashchange', function() {
+            const hash = window.location.hash;
+            if (hash) {
+                const targetElement = document.querySelector(hash);
+                if (targetElement) {
+                    const navHeight = document.querySelector('.nav').offsetHeight;
+                    const targetPosition = targetElement.offsetTop - navHeight;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
     </script>
 </body>
 </html>

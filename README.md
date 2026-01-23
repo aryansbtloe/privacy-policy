@@ -7,6 +7,7 @@ A modern, professional, and fully responsive privacy policy template that dynami
 ```
 privacy-policy/
 ├── index.html              # Main privacy policy page
+├── translations.js         # Localisation strings (en, es, hi)
 ├── privacy-policy-template.html  # Template version
 ├── README.md               # This documentation
 ├── deploy.sh              # Deployment script
@@ -27,6 +28,7 @@ privacy-policy/
 
 ### 🔧 **Dynamic Functionality**
 - **Dynamic App Names** - Changes based on URL parameter
+- **Localisation (i18n)** - Show the policy in multiple languages (English, Español, हिन्दी). Use `?lang=es` or `?lang=hi`, or pick a language from the nav dropdown. Choice is saved in `localStorage`. Add more languages in `translations.js`.
 - **Smooth Scrolling** navigation between sections
 - **Scroll-to-Top** button with smooth animations
 - **Fade-in Animations** using Intersection Observer API
@@ -78,9 +80,9 @@ https://yourdomain.com/?app=YourAppName
 ```
 
 ### **Examples:**
-- **Virtual Mic**: `https://privacy.aryansbtloe.com/?app=Virtual%20Mic`
-- **My New App**: `https://privacy.aryansbtloe.com/?app=My%20New%20App`
-- **Another App**: `https://privacy.aryansbtloe.com/?app=Another%20App`
+- **Virtual Mic**: `https://aryansbtloe.github.io/privacy-policy/?app=Virtual%20Mic`
+- **My New App**: `https://aryansbtloe.github.io/privacy-policy/?app=My%20New%20App`
+- **Another App**: `https://aryansbtloe.github.io/privacy-policy/?app=Another%20App`
 
 ### **URL Encoding:**
 - Spaces: `%20` (e.g., "My App" → "My%20App")
@@ -202,8 +204,8 @@ git push origin main
 
 If you need help customizing or implementing this template:
 
-- **Email**: privacy@aryansbtloe.com
-- **Website**: www.aryansbtloe.com
+- **Email**: alok.singh.confident@gmail.com
+- **Website**: https://aryansbtloe.github.io/
 - **Location**: Haryana, India
 
 ---
